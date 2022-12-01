@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="libraryContainer">
+        <form class="form" id="form" method="post">
+            <label for="title">Book</label><br>
+            <input type="text" id="title" name="title"><br>
+            <label for="author">Author</label><br>
+            <input type="text" id="author" name="author">
+            <label for="pages">Pages</label><br>
+            <input type="number" id="pages" name="pages "><br>
+            <label for="status">Status</label>
+            <select id="status" name="status">
+                <option value="read">Read</option>
+                <option value="notRead">Not Read</option>
+            </select>
+            <input type="submit">
+        </form>
+    </div>
+    <script src="library.js"></script>
+</body>
+</html>
