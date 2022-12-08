@@ -1,13 +1,130 @@
 body {
     display: grid;
-    background-color: black;
+    background-color: white;
     height: 100%;
+    margin: 0;
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
 .libraryContainer {
-    height: 35vh;
-    width: 80vw;
+    height: 100vh;
+    width: 100%;
     background-color: white;
     justify-self: center;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
+
+.form {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 10%; 
+    grid-template-rows: .5fr 45px 1fr;
+    height: 20%;
+    width: 100%;
+    row-gap: 5%;
+    column-gap: 5%;
+    
+}
+
+#titleText {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: flex-end;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+#title {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;  
+}
+
+#authorText {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: flex-end;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+#author {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;  
+}
+
+#pagesText {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: flex-end;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+#pages {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;  
+}
+
+#statusText {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;  
+    align-self: flex-end;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+#status {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;  
+}
+
+#submitBtn {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4; 
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    border-radius: 8px;
+    width: 135px;
+    height: 45px;
+    border: none;
+    background-color: grey;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 3%;
+}
+
+#library {
+    width: 100%;
+    border-collapse:collapse;
+}
+
+th,td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
